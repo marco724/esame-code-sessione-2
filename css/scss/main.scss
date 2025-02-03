@@ -1,0 +1,486 @@
+// Importazione di altri file SCSS
+@import "footer"; // Stili per il footer
+@import "header"; // Stili per l'header
+@import "variabili"; // Variabili globali (colori, dimensioni, ecc.)
+@import "mixin"; // Mixin riutilizzabili
+
+// Condizione per il tema light
+@if $template == light {
+    // Stili per il tema light
+    a {
+        color: $C_testo; 
+    }
+
+    h2 {
+        color: $C_hover; 
+    }
+
+    h3 {
+        color: $C_testo; 
+    }
+
+    .myfoto {
+        border: $C_testo solid 10px;
+    }
+
+    .header {
+        background-color: $BgMain;
+
+        ul {
+            background-color: $BgMain; 
+        }
+    }
+
+    .header .logo {
+        background-color: $BgMain; 
+        border: $C_testo solid 5px; 
+    }
+} @else {
+    // Stili per il tema dark (o alternativo)
+    body {
+        background-color: $BgMain2; 
+    }
+
+    label {
+        color: $BgMain; 
+    }
+
+    p {
+        color: $BgMain; 
+    }
+
+    .bottom,
+    .botton {
+        background-color: $BgMain; 
+    }
+
+    .subtitle-banner {
+        color: $BgMain; 
+    }
+
+    .header {
+        background-color: $BgMain2; 
+
+        ul {
+            background-color: $BgMain2; 
+        }
+    }
+
+    .header .logo {
+        background-color: $BgMain; 
+        border: $BgMain solid 5px; 
+
+        &:hover {
+            border: $C_hover solid 5px; 
+        }
+    }
+
+    #menuToggle span {
+        background-color: $BgMain; 
+    }
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box; 
+    padding: 0;
+    margin: 0;
+    font-family: $font; 
+}
+
+// Stili per il body
+body {
+    width: 100%; 
+}
+
+// Stili per le etichette
+label {
+    cursor: pointer;
+}
+
+// Comportamento di scorrimento fluido
+html {
+    scroll-behavior: smooth;
+}
+
+// Stili per i link
+a {
+    color: $C_testo; 
+    text-decoration: none; 
+}
+
+// Sezione "top" (banner principale)
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    min-height: 100vh; 
+    margin-top: 100px;
+
+    @media all and (max-width: 600px) {
+        margin: 20px 0; 
+    }
+}
+
+// Sezione "about" (descrizione personale)
+.conteiner-about {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+// Stili per l'immagine del profilo
+.myfoto {
+    width: 300px;
+    @include F_raggio(30px); 
+    border: $C_testo solid 10px;
+    margin: 20px;
+
+    &:hover {
+        border: $C_hover solid 10px; 
+        transition: all 0.6s ease; 
+        cursor: pointer; 
+    }
+
+    @media all and (max-width: 800px) {
+        width: 150px; 
+        border: $C_hover solid 5px;
+    }
+}
+
+// Stili per la descrizione personale
+.MyDescription {
+    max-width: 600px;
+    font-size: $size;
+    padding: 20px;
+    font-weight: 600;
+
+    @media all and (max-width: 800px) {
+        font-size: $size_media; 
+    }
+}
+
+// Stili per i titoli delle sezioni
+.title-port,
+.title-about,
+.title-contact {
+    margin: 100px auto;
+    text-align: center;
+
+    @media all and (max-width: 800px) {
+        margin-top: 100px; 
+    }
+}
+
+// Stili per le sezioni portfolio, contatti e about
+.portfolio,
+.contact,
+.about {
+    @media all and (max-width: 600px) {
+        margin: 0; 
+    }
+}
+
+// Stili per la sezione portfolio
+.portfolio {
+    @media all and (max-width: 600px) {
+        margin: 0; 
+    }
+}
+
+// Mixin per i titoli (h2 e h3)
+%h {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 700;
+}
+
+// Stili per gli h2
+h2 {
+    @extend %h; 
+    color: $C_hover;
+    font-size: $size + (4 * $size_delta);
+
+    @media all and (max-width: 800px) {
+        font-size: $size + (2 * $size_delta); 
+    }
+}
+
+// Stili per gli h3
+h3 {
+    @extend %h; 
+    font-size: $size + (3 * $size_delta);
+    color: $C_testo;
+
+    @media all and (max-width: 800px) {
+        font-size: $size + (1 * $size_delta); 
+    }
+}
+
+// Stili per i bottoni
+.botton {
+    width: 300px;
+    font-size: $size;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    border: 3px solid $C_testo;
+    transition: all 0.6s;
+    margin: 20px 0 0 30px;
+
+    &:hover {
+        background-color: $C_hover; 
+        border-radius: 50px;
+        cursor: pointer; 
+    }
+
+    @media all and (max-width: 800px) {
+        width: 220px; 
+        font-size: $size_media;
+    }
+}
+
+// Contenitore per i bottoni
+.conteiner-botton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 50px 0;
+
+    @media all and (max-width: 600px) {
+        margin: 10px 0 0 0; 
+    }
+}
+
+// Sezione portfolio
+.conteiner-portfolio {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px;
+    gap: 50px;
+    z-index: 1;
+    position: relative;
+    width: 80%;
+    max-width: 100%;
+
+    @media all and (max-width: 800px) {
+        gap: 20px; 
+    }
+}
+
+// Stili per le card del portfolio
+.card {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    cursor: pointer;
+    @include F_raggio(30px); 
+
+    &:hover .card-inner,
+    &:focus .card-inner {
+        transform: rotateY(180deg); 
+    }
+
+    @media (max-width: 800px) {
+        width: 200px; 
+        height: 130px;
+    }
+}
+
+// Stili per le immagini delle card
+.img-work {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    @include F_raggio(30px); 
+}
+
+// Contenitore interno delle card
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out; 
+    @include F_raggio(30px);
+}
+
+// Stili per il fronte e il retro delle card
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $size;
+    border: 1px solid $C_testo;
+    @include F_raggio(30px); 
+}
+
+.card-front {
+    transform: rotateY(0deg); 
+}
+
+.card-back {
+    background-color: $Bgcard; 
+    transform: rotateY(180deg); 
+    padding: 30px;
+
+    @media (max-width: 800px) {
+        font-size: $size_media; 
+        padding: 15px;
+    }
+}
+
+// Contenitore per il testo all'interno delle card
+.div-spam {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+// Stili per il form di contatto
+form {
+    width: 320px;
+    margin: 45px auto;
+}
+
+// Gruppo di campi del form
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin: 10px;
+    width: 100%;
+}
+
+// Stili per i campi del form
+.form__field {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-size: $size;
+    color: $C_hover;
+    padding: 20px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+
+    &::placeholder {
+        color: transparent; 
+    }
+
+    &:placeholder-shown ~ .form__label {
+        font-size: $size;
+        cursor: text;
+        top: 20px;
+    }
+}
+
+// Stili per le etichette del form
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: $size;
+}
+
+// Stili per i campi del form in focus
+.form__field:focus {
+    ~ .form__label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: $size;
+        color: $C_hover;
+        font-weight: 700;
+    }
+}
+
+// Stili per la barra sotto i campi del form
+.bar {
+    position: relative;
+    display: block;
+    width: 320px;
+    height: 2px;
+    background-color: $C_testo;
+
+    &:before {
+        content: "";
+        height: 3px;
+        width: 0;
+        bottom: 0px;
+        position: absolute;
+        background: $C_hover;
+        transition: 300ms ease all; 
+        left: 0%;
+    }
+}
+
+
+textarea {
+    resize: none;
+}
+
+// Stili per la sezione del progetto principale
+.title-project {
+    margin: 100px 0 50px 0;
+    text-align: center;
+}
+
+// Contenitore per il progetto principale
+.conteiner-project {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: $Bgfooter;
+    @include F_raggio(30px); 
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+// Stili per l'immagine del progetto principale
+.img-project {
+    border: 2px solid $C_testo;
+    width: 300px;
+    margin: 70px;
+    align-self: flex-start;
+
+    @media all and (max-width: 800px) {
+        width: 200px; 
+    }
+}
+
+// Stili per la descrizione del progetto principale
+.desk {
+    width: 500px;
+    margin: 50px 30px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: $size;
+}

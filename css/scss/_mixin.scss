@@ -1,0 +1,21 @@
+// mixin per la sbordatura 
+
+@mixin F_raggio($r) {
+    border-top-left-radius: $r;
+    border-bottom-right-radius: $r;
+}
+
+// mixin per le animazioni
+
+@mixin transition($property: all, $duration: 0.6s, $easing: ease) {
+    transition: $property $duration $easing;
+}
+
+// mixin per le media 
+
+@mixin respond-to($breakpoint) {
+    @media all and (max-width: $breakpoint) {
+        @content;
+    }
+}
+

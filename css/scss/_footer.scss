@@ -1,0 +1,46 @@
+@import "variabili"; //importo il foglio variabili
+
+//definisco il container del footer
+.conteiner-footer {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $Bgfooter;
+    margin: 0 auto;
+    padding: 10px;
+}
+//definisco lo trasformazione delle immagini
+.cookie,
+.privacy {
+    color: $C_hover;
+    &:hover {
+        transition: all 0.6s ease;
+        text-decoration: underline;
+    }
+}
+//definisco il container per il testo
+.conteiner-privacy {
+    font-size: $size;
+    font-weight: 700;
+    padding-bottom: 30px;
+
+}
+
+.icon {
+    margin: 20px 50px;
+}
+//definisco il container per i bottoni 
+.conteiner-btn-footer {
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+//media 
+@media all and (max-width: 800px){
+    .conteiner-privacy{
+        font-size: $size_media;
+    }
+} 

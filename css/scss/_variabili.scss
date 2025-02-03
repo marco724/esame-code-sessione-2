@@ -1,0 +1,28 @@
+// Variabile per il tema attivo (light o dark)
+$template: light; // Valori possibili: light | dark
+
+// Variabili per i colori
+$BgMain: #ffffff;            
+$C_testo: #000000;            
+$C_hover: #F28705;           
+$Bgfooter: rgba(242, 135, 5, 0.302); 
+$Bgcard: rgba(242, 135, 5, 0.6);     
+$BgMain2: #212121;           
+$C_testo2: #ffffff;          
+
+// Variabili per le dimensioni dei font
+$size: 1.5rem;               
+$size_media: 1rem;            
+$size_delta: 0.8;            
+$size_delta_media: 0.2;      
+
+// Variabile per il font di base
+$font: "sans-serif";         
+// Variabili per bordi e spaziature
+$border-radius: 30px;         
+$default-padding: 20px;      
+
+  
+
+
+

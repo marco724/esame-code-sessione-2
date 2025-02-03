@@ -1,0 +1,142 @@
+{
+    "siteInfo": {
+        "siteName": "Marco Belli - Full-Stack Developer",
+        "pagename": [
+            "contatti",
+            "progetto"
+        ],
+        "links": [
+            "Home",
+            "Portfolio",
+            "Chi sono"
+        ],
+        "banner": {
+            "subtitle": "Hello! My Name is",
+            "title": "Marco Belli.",
+            "subtitle2": "I'm a Full-Stack Developer."
+        },
+        "about": {
+            "title": "Chi sono",
+            "description": "Ciao! Sono Marco Belli, uno Sviluppatore Full-stack con base in Italia. Dopo aver lavorato per 5 anni come elettricista, ho deciso di cambiare completamente la mia vita e seguire la mia passione per l'informatica. Mi sono iscritto all'Accademia 'CODE' di Torino, un percorso rigoroso, ma al tempo stesso illuminante ed entusiasmante, che mi ha fatto crescere come persona ma soprattutto come sviluppatore! La scelta migliore che potessi fare nella mia vita! Adoro imparare nuove tecnologie e mettere alla prova la mia creatività per creare cose straordinarie.",
+            "image": "../media/miafoto.jpg",
+            "resume": "../media/cv.pdf"
+        },
+        "contact": {
+            "title": "Compila il form",
+            "description": "Contattami per qualsiasi domanda o richiesta."
+        },
+        "project": {
+            "title": "Progetto",
+            "image": "../media/sitoweb3.jpg",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab, eligendi, sequi voluptate esse assumenda accusantium libero nesciunt doloremque animi fugit sint necessitatibus omnis nulla. Maxime possimus quaerat quas dolor?"
+        },
+        "menu": [
+            {
+                "label": "Home",
+                "id": "home"
+            },
+            {
+                "label": "Portfolio",
+                "id": "portfolio"
+            },
+            {
+                "label": "Chi sono",
+                "id": "Chi sono"
+            }
+        ],
+        "projects": [
+            {
+                "title": "Progetto 1",
+                "text": "Descrizione del progetto ",
+                "image": "../media/sitoweb3piccolo.jpg",
+                "link": "progetto.php"
+            },
+            {
+                "title": "Progetto 2",
+                "text": "Descrizione del progetto ",
+                "image": "../media/sitoweb3piccolo.jpg",
+                "link": "progetto.php"
+            },
+            {
+                "title": "Progetto 3",
+                "text": "Descrizione del progetto ",
+                "image": "../media/sitoweb3piccolo.jpg",
+                "link": "progetto.php"
+            },
+            {
+                "title": "Progetto 4",
+                "text": "Descrizione del progetto ",
+                "image": "../media/sitoweb3piccolo.jpg",
+                "link": "progetto.php"
+            },
+            {
+                "title": "Progetto 5",
+                "text": "Descrizione del progetto ",
+                "image": "../media/sitoweb3piccolo.jpg",
+                "link": "progetto.php"
+            },
+            {
+                "title": "Progetto 6",
+                "text": "Descrizione del progetto ",
+                "image": "../media/sitoweb3piccolo.jpg",
+                "link": "progetto.php"
+            },
+            {
+                "title": "Progetto 7",
+                "text": "Descrizione del progetto ",
+                "image": "../media/sitoweb3piccolo.jpg",
+                "link": "progetto.php"
+            },
+            {
+                "title": "Progetto 8",
+                "text": "Descrizione del progetto ",
+                "image": "../media/sitoweb3piccolo.jpg",
+                "link": "progetto.php"
+            },
+            {
+                "title": "Progetto 9",
+                "text": "Descrizione del progetto ",
+                "image": "../media/sitoweb3piccolo.jpg",
+                "link": "progetto.php"
+            },
+            {
+                "title": "Progetto 10",
+                "text": "Descrizione del progetto .",
+                "image": "../media/sitoweb3piccolo.jpg",
+                "link": "progetto.php"
+            },
+            {
+                "title": "Progetto 11",
+                "text": "Descrizione del progetto .",
+                "image": "../media/sitoweb3piccolo.jpg",
+                "link": "progetto.php"
+            },
+            {
+                "title": "Progetto 12",
+                "text": "Descrizione del progetto .",
+                "image": "../media/sitoweb3piccolo.jpg",
+                "link": "progetto.php"
+            }
+        ]
+    },
+    "contatti": [
+        {
+            "label": "Home",
+            "href": "./index.php"
+        },
+        {
+            "label": "Portfolio",
+            "href": "./progetto.php"
+        }
+    ],
+    "progetto": [
+        {
+            "label": "Home",
+            "href": "./index.php"
+        },
+        {
+            "label": "Contattami",
+            "href": "./contattami.php"
+        }
+    ]
+}
