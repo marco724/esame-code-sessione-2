@@ -18,17 +18,12 @@
         "about": {
             "title": "Chi sono",
             "description": "Ciao! Sono Marco Belli, uno Sviluppatore Full-stack con base in Italia. Dopo aver lavorato per 5 anni come elettricista, ho deciso di cambiare completamente la mia vita e seguire la mia passione per l'informatica. Mi sono iscritto all'Accademia 'CODE' di Torino, un percorso rigoroso, ma al tempo stesso illuminante ed entusiasmante, che mi ha fatto crescere come persona ma soprattutto come sviluppatore! La scelta migliore che potessi fare nella mia vita! Adoro imparare nuove tecnologie e mettere alla prova la mia creatività per creare cose straordinarie.",
-            "image": "../media/miafoto.jpg",
-            "resume": "../media/cv.pdf"
+            "image": "./media/miafoto.jpg",
+            "resume": "./media/cv.pdf"
         },
         "contact": {
             "title": "Compila il form",
             "description": "Contattami per qualsiasi domanda o richiesta."
-        },
-        "project": {
-            "title": "Progetto",
-            "image": "../media/sitoweb3.jpg",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab, eligendi, sequi voluptate esse assumenda accusantium libero nesciunt doloremque animi fugit sint necessitatibus omnis nulla. Maxime possimus quaerat quas dolor?"
         },
         "menu": [
             {
@@ -46,76 +41,100 @@
         ],
         "projects": [
             {
+                "id": "1",
                 "title": "Progetto 1",
                 "text": "Descrizione del progetto ",
-                "image": "../media/sitoweb3piccolo.jpg",
-                "link": "progetto.php"
+                "image": "./media/sitoweb3piccolo.jpg",
+                "link": "./progetto.php?id=1",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab, eligendi, sequi voluptate esse assumenda accusantium libero nesciunt doloremque animi fugit sint necessitatibus omnis nulla. Maxime possimus quaerat quas dolor?"
             },
             {
+                "id": "2",
                 "title": "Progetto 2",
                 "text": "Descrizione del progetto ",
-                "image": "../media/sitoweb3piccolo.jpg",
-                "link": "progetto.php"
+                "image": "./media/sitoweb3piccolo.jpg",
+                "link": "./progetto.php?id=2",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab, eligendi, sequi voluptate esse assumenda accusantium libero nesciunt doloremque animi fugit sint necessitatibus omnis nulla. Maxime possimus quaerat quas dolor?"
             },
             {
+                "id": "3",
                 "title": "Progetto 3",
                 "text": "Descrizione del progetto ",
-                "image": "../media/sitoweb3piccolo.jpg",
-                "link": "progetto.php"
+                "image": "./media/sitoweb3piccolo.jpg",
+                "link": "./progetto.php?id=3",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab, eligendi, sequi voluptate esse assumenda accusantium libero nesciunt doloremque animi fugit sint necessitatibus omnis nulla. Maxime possimus quaerat quas dolor?"
             },
             {
+                "id": "4",
                 "title": "Progetto 4",
                 "text": "Descrizione del progetto ",
-                "image": "../media/sitoweb3piccolo.jpg",
-                "link": "progetto.php"
+                "image": "./media/sitoweb3piccolo.jpg",
+                "link": "./progetto.php?id=4",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab, eligendi, sequi voluptate esse assumenda accusantium libero nesciunt doloremque animi fugit sint necessitatibus omnis nulla. Maxime possimus quaerat quas dolor?"
             },
             {
+                "id": "5",
                 "title": "Progetto 5",
                 "text": "Descrizione del progetto ",
-                "image": "../media/sitoweb3piccolo.jpg",
-                "link": "progetto.php"
+                "image": "./media/sitoweb3piccolo.jpg",
+                "link": "./progetto.php?id=5",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab, eligendi, sequi voluptate esse assumenda accusantium libero nesciunt doloremque animi fugit sint necessitatibus omnis nulla. Maxime possimus quaerat quas dolor?"
             },
             {
+                "id": "6",
                 "title": "Progetto 6",
                 "text": "Descrizione del progetto ",
-                "image": "../media/sitoweb3piccolo.jpg",
-                "link": "progetto.php"
+                "image": "./media/sitoweb3piccolo.jpg",
+                "link": "./progetto.php?id=6",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab, eligendi, sequi voluptate esse assumenda accusantium libero nesciunt doloremque animi fugit sint necessitatibus omnis nulla. Maxime possimus quaerat quas dolor?"
             },
             {
+                "id": "7",
                 "title": "Progetto 7",
                 "text": "Descrizione del progetto ",
-                "image": "../media/sitoweb3piccolo.jpg",
-                "link": "progetto.php"
+                "image": "./media/sitoweb3piccolo.jpg",
+                "link": "./progetto.php?id=7",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab, eligendi, sequi voluptate esse assumenda accusantium libero nesciunt doloremque animi fugit sint necessitatibus omnis nulla. Maxime possimus quaerat quas dolor?"
             },
             {
+                "id": "8",
                 "title": "Progetto 8",
                 "text": "Descrizione del progetto ",
-                "image": "../media/sitoweb3piccolo.jpg",
-                "link": "progetto.php"
+                "image": "./media/sitoweb3piccolo.jpg",
+                "link": "./progetto.php?id=8",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab, eligendi, sequi voluptate esse assumenda accusantium libero nesciunt doloremque animi fugit sint necessitatibus omnis nulla. Maxime possimus quaerat quas dolor?"
             },
             {
+                "id": "9",
                 "title": "Progetto 9",
                 "text": "Descrizione del progetto ",
-                "image": "../media/sitoweb3piccolo.jpg",
-                "link": "progetto.php"
+                "image": "./media/sitoweb3piccolo.jpg",
+                "link": "./progetto.php?id=9",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab, eligendi, sequi voluptate esse assumenda accusantium libero nesciunt doloremque animi fugit sint necessitatibus omnis nulla. Maxime possimus quaerat quas dolor?"
             },
             {
+                "id": "10",
                 "title": "Progetto 10",
-                "text": "Descrizione del progetto .",
-                "image": "../media/sitoweb3piccolo.jpg",
-                "link": "progetto.php"
+                "text": "Descrizione del progetto.",
+                "image": "./media/sitoweb3piccolo.jpg",
+                "link": "./progetto.php?id=10",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab, eligendi, sequi voluptate esse assumenda accusantium libero nesciunt doloremque animi fugit sint necessitatibus omnis nulla. Maxime possimus quaerat quas dolor?"
             },
             {
+                "id": "11",
                 "title": "Progetto 11",
-                "text": "Descrizione del progetto .",
-                "image": "../media/sitoweb3piccolo.jpg",
-                "link": "progetto.php"
+                "text": "Descrizione del progetto.",
+                "image": "./media/sitoweb3piccolo.jpg",
+                "link": "./progetto.php?id=11",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab, eligendi, sequi voluptate esse assumenda accusantium libero nesciunt doloremque animi fugit sint necessitatibus omnis nulla. Maxime possimus quaerat quas dolor?"
             },
             {
+                "id": "12",
                 "title": "Progetto 12",
-                "text": "Descrizione del progetto .",
-                "image": "../media/sitoweb3piccolo.jpg",
-                "link": "progetto.php"
+                "text": "Descrizione del progetto.",
+                "image": "./media/sitoweb3piccolo.jpg",
+                "link": "./progetto.php?id=12",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab, eligendi, sequi voluptate esse assumenda accusantium libero nesciunt doloremque animi fugit sint necessitatibus omnis nulla. Maxime possimus quaerat quas dolor?"
             }
         ]
     },

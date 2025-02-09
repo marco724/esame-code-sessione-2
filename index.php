@@ -1,6 +1,6 @@
 <?php
 // Includo il file della classe SiteManager
-require_once 'SiteManager.php';
+require_once './SiteManager.php';
 
 // Creo un alias per la classe SiteManager come SM
 use SiteManager as SM;
@@ -15,7 +15,24 @@ $sm = new SM();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <script type="text/javascript">
+                (function(w, d) {
+                    var loader = function() {
+                        var s = d.createElement("script"),
+                            tag = d.getElementsByTagName("script")[0];
+                        s.src = "https://cdn.iubenda.com/iubenda.js";
+                        tag.parentNode.insertBefore(s, tag);
+                    };
+                    if (w.addEventListener) {
+                        w.addEventListener("load", loader, false);
+                    } else if (w.attachEvent) {
+                        w.attachEvent("onload", loader);
+                    } else {
+                        w.onload = loader;
+                    }
+                })(window, document);
+            </script>
     <!-- Titolo della pagina ottenuto dal metodo getSiteName() -->
     <title><?php echo $sm->getSiteName(); ?></title>
 </head>
@@ -58,7 +75,7 @@ $sm = new SM();
         </div>
 
         <!-- Sezione Portfolio -->
-        <?php include 'portfolio.php'; ?>
+        <?php include './portfolio.php'; ?>
 
         <!-- Sezione About Me -->
         <section class="about" id="Chi sono">
@@ -70,7 +87,7 @@ $sm = new SM();
             </div>
             <div class="conteiner-botton">
                 <!-- Link per scaricare il curriculum -->
-                <a href="<?php echo htmlspecialchars($sm->getAboutInfo()['resume']); ?>" download class="botton" title="Download Resume">Download Resume<img src="../media/download.png" alt="Download Symbol" style="width: 24px;"></a>
+                <a href="<?php echo htmlspecialchars($sm->getAboutInfo()['resume']); ?>" download class="botton" title="Download Resume">Download Resume<img src="./media/download.png" alt="Download Symbol" style="width: 24px;"></a>
             </div>
         </section>
     </main>

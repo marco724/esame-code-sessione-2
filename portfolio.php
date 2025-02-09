@@ -1,6 +1,6 @@
 <?php
 // Includo il file della classe SiteManager
-require_once 'SiteManager.php';
+require_once './SiteManager.php';
 
 // Creo un alias per la classe SiteManager come SM
 use SiteManager as SM;
@@ -24,7 +24,7 @@ $projects = $sm->getProjects();
                              alt="<?php echo htmlspecialchars($project['title']); ?>">
                     </div>
                     <div class="card-back">
-                        <a class="div-spam" href="<?php echo htmlspecialchars($project['link']); ?>" 
+                    <a class="div-spam" href="./progetto.php?id=<?php echo urlencode($project['id']); ?>" 
                            title="Vai a <?php echo htmlspecialchars($project['title']); ?>" role="button">
                             <h4><?php echo htmlspecialchars($project['title']); ?></h4>
                             <p>View More...</p>
@@ -36,7 +36,7 @@ $projects = $sm->getProjects();
 
         <div class="conteiner-botton">
             <a href="contattami.php" class="botton" title="Contattami">
-                Contattami <img src="../media/send.png" alt="Simbolo Send" style="width: 24px;">
+                Contattami <img src="./media/send.png" alt="Simbolo Send" style="width: 24px;">
             </a>
         </div>
     </div>

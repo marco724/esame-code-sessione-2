@@ -2,7 +2,7 @@
 
 class SiteManager {
     // Percorso del file JSON che contiene i dati del sito
-    private $jsonFile = '../json/data.json';
+    private $jsonFile = './json/data.json';
     
     // Array per memorizzare i dati caricati dal file JSON
     private $data = [];
@@ -81,9 +81,13 @@ class SiteManager {
     }
 
     // Metodo per ottenere le informazioni del progetto principale
-    public function getProjectInfo() {
-        // Restituisce le informazioni del progetto principale
-        return $this->data['siteInfo']['project'] ?? [];
+    public function getProjectInfo($id) {
+        foreach ($this->data['siteInfo']['projects'] as $project) {
+            if ($project['id'] == $id) {
+                return $project;
+            }
+        }
+        return null;
     }
 
     // Metodo per validare i dati del form di contatto
@@ -158,12 +162,12 @@ class SiteManager {
         $socialLinks = [
             "instagram" => [
                 "url" => "https://www.instagram.com/",
-                "icon" => "../media/instagram.png",
+                "icon" => "./media/instagram.png",
                 "alt" => "Logo Instagram"
             ],
             "linkedin" => [
                 "url" => "https://www.linkedin.com/in/marco-belli-b0626b30b",
-                "icon" => "../media/linkedin.png",
+                "icon" => "./media/linkedin.png",
                 "alt" => "Logo LinkedIn"
             ]
         ];
@@ -193,24 +197,6 @@ class SiteManager {
                     <?php endforeach; ?>
                 </div>
             </div>
-
-            <script type="text/javascript">
-                (function(w, d) {
-                    var loader = function() {
-                        var s = d.createElement("script"),
-                            tag = d.getElementsByTagName("script")[0];
-                        s.src = "https://cdn.iubenda.com/iubenda.js";
-                        tag.parentNode.insertBefore(s, tag);
-                    };
-                    if (w.addEventListener) {
-                        w.addEventListener("load", loader, false);
-                    } else if (w.attachEvent) {
-                        w.attachEvent("onload", loader);
-                    } else {
-                        w.onload = loader;
-                    }
-                })(window, document);
-            </script>
         </footer>
         <?php
         // Restituisce il contenuto generato
