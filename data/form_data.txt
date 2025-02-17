@@ -1,0 +1,14 @@
+Nuovo invio:
+Nome: pippo
+Cognome: franco
+Email: franco@pippo.it
+Phone: 3480000000
+Message: ciao sono pippo franco
+------------------------
+Nuovo invio:
+Nome: pippo
+Cognome: franco
+Email: franco@pippo.it
+Phone: 3480000000
+Message: ciao sono pippo franco
+------------------------

@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.min.css">
     <style>
@@ -62,25 +62,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             color: red;
             font-size: 0.9rem;
         }
-        .success { color: green; font-size: 1rem; margin: 10px auto; text-align: center; }
+
+        .success {
+            color: green;
+            font-size: 1rem;
+            margin: 10px auto;
+            text-align: center;
+        }
     </style>
-    <script type="text/javascript">
-                (function(w, d) {
-                    var loader = function() {
-                        var s = d.createElement("script"),
-                            tag = d.getElementsByTagName("script")[0];
-                        s.src = "https://cdn.iubenda.com/iubenda.js";
-                        tag.parentNode.insertBefore(s, tag);
-                    };
-                    if (w.addEventListener) {
-                        w.addEventListener("load", loader, false);
-                    } else if (w.attachEvent) {
-                        w.attachEvent("onload", loader);
-                    } else {
-                        w.onload = loader;
-                    }
-                })(window, document);
-            </script>
+    <script>
+        (function(w, d) {
+            var loader = function() {
+                var s = d.createElement("script"),
+                    tag = d.getElementsByTagName("script")[0];
+                s.src = "https://cdn.iubenda.com/iubenda.js";
+                tag.parentNode.insertBefore(s, tag);
+            };
+            if (w.addEventListener) {
+                w.addEventListener("load", loader, false);
+            } else if (w.attachEvent) {
+                w.attachEvent("onload", loader);
+            } else {
+                w.onload = loader;
+            }
+        })(window, document);
+    </script>
     <!-- Titolo della pagina ottenuto dal metodo getPageName() -->
     <title><?php echo $sm->getPageName(); ?></title>
 </head>
@@ -88,9 +94,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <header class="header">
         <a href="#top" title="To Top" class="logo">MB</a>
-        <nav role="navigation">
+        <nav>
             <div id="menuToggle">
-                <input type="checkbox" id="menuCheckbox" />
+                <input type="checkbox" id="menuCheckbox">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -98,8 +104,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <!-- Genero il menu dinamicamente utilizzando il metodo getMenuItems() -->
                     <?php foreach ($sm->getMenuItemsContattami() as $menuItem): ?>
                         <li>
-                            <a href="<?php echo htmlspecialchars($menuItem['href']); ?>" title="Go to <?php echo htmlspecialchars($menuItem['label']); ?>">
-                                <label for="menuCheckbox" onclick="this.parentNode.click();"><?php echo htmlspecialchars($menuItem['label']); ?></label>
+                            <a href="<?php echo htmlspecialchars($menuItem['href']); ?>"
+                                title="Go to <?php echo htmlspecialchars($menuItem['label']); ?>"
+                                onclick="document.getElementById('menuCheckbox').checked = false;">
+                                <?php echo htmlspecialchars($menuItem['label']); ?>
                             </a>
                         </li>
                     <?php endforeach; ?>
@@ -111,7 +119,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <section class="contact" id="contatti">
         <h2 class="title-contact">Contattami</h2>
         <div class="conteiner-contact">
-        <?php if ($successMessage): ?>
+            <?php if ($successMessage): ?>
                 <p class="success"><?php echo $successMessage; ?></p>
             <?php endif; ?>
             <form action="./contattami.php" method="post" class="form" novalidate>
